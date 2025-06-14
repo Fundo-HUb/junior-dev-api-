@@ -3,7 +3,7 @@ const app = express();
 
 app.use(express.json());
 
-app.post('/sort', (req, res) => {
+app.post('/api/sort-string', (req, res) => {
     const { data } = req.body;
 
     if (!data || typeof data !== 'string') {
